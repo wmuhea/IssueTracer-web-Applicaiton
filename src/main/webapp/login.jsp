@@ -1,4 +1,3 @@
-
 <jsp:include page="partials/header.jsp"/>
 <jsp:include page="partials/nav.jsp"/>
 
@@ -24,7 +23,8 @@
         </div>
 
         <div class="col-md-6 d-flex">
-            <div id="map" class="bg-white"></div>
+            <div id="login-image" class="bg-white"
+                 style="background-image: url('./resources/images/loginBg.jpg');height: 100vh;width: 100%;"></div>
         </div>
     </div>
 </div>
