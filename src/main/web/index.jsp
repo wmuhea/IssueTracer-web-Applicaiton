@@ -11,5 +11,6 @@
     <title>Issue Tracer</title>
   </head>
   <body>
+  <h1>This is the page</h1>
   </body>
 </html>
