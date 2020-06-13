@@ -16,6 +16,6 @@ public class CreateIssueServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    request.getRequestDispatcher("/createIssue.jsp").forward(request,response);
+        request.getRequestDispatcher("/createIssue.jsp").forward(request,response);
     }
 }
