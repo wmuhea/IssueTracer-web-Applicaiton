@@ -7,6 +7,7 @@
     <groupId>cs472.miu.edu</groupId>
     <artifactId>IssueTracer</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -41,7 +42,7 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
-            <version>9.0.33</version>
+            <version>9.0.35</version>
         </dependency>
     </dependencies>
 
