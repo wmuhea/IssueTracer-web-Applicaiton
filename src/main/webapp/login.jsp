@@ -13,8 +13,6 @@
                 <div class="form-group">
                     <input type="password" class="form-control" placeholder="Password">
                 </div>
-
-
                 <div class="form-group">
                     <input type="submit" value="Login" class="btn btn-primary py-3 px-5">
                 </div>
