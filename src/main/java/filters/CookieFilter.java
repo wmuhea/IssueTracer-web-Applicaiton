@@ -1,7 +1,7 @@
 package filters;
 
-import Data.DB;
 
+import Data.UserDao;
 import models.User;
 
 import javax.servlet.*;
@@ -23,7 +23,7 @@ public class CookieFilter implements Filter {
         if(cookies!=null){
             for(Cookie c: cookies){
                 if(c.getName().equals("user")){
-                    user = DB.getInstance().findByUsername(c.getValue());
+                    user = UserDao.getInstance().findByUsername(c.getValue());
                 }
             }
 

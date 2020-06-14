@@ -1,0 +1,21 @@
+.btn-primary {
+    /*background: #05386b !important;*/
+    /*border: 1px solid #05386b !important;*/
+}
+
+.login-wrapper .form-wrapper {
+    width: 100%;
+    background: #f8f9fa !important;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media screen and (min-width: 768px) {
+    .login-wrapper > .row {
+        height: 100vh;
+        margin-top: 90px;
+    }
+}
