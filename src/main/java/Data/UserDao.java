@@ -29,11 +29,7 @@ public class UserDao {
         return userDbInstance;
     }
     public User findByUsername(String userName) {
-        User foundResult = null;
-        if(teamDb.containsKey(userName)) {
-            foundResult = teamDb.get(userName);
-        }
-        return foundResult;
+        return teamDb.get(userName);
     }
 
 
