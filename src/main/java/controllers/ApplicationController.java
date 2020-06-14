@@ -12,4 +12,21 @@ import java.io.IOException;
 @WebServlet(name = "ApplicationController", urlPatterns = "/app")
 public class ApplicationController extends HttpServlet {
 
+    private IssuesDao issuesDataBase;
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        if (request.getAttribute("redirectUrl") == null) {
+            request.getRequestDispatcher("/app/dashboard.jsp").forward(request, response);
+        } else {
+            response.sendRedirect((String) request.getAttribute("redirectUrl"));
+        }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest reqest, HttpServletResponse response) throws ServletException, IOException {
+        String issueAssignedTo = (String) reqest.getSession().getAttribute("userName");
+
+    }
 }

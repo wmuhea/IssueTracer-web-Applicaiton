@@ -9,7 +9,8 @@ import java.util.Map;
 
 public class UserDao {
 
-    private Map<Integer, User> teamDb;
+    private static Map<Integer, User> teamDb;
+    private static UserDao userDbInstance = null;
 
     {
       teamDb = new HashMap<Integer, User>();
@@ -19,7 +20,21 @@ public class UserDao {
       teamDb.put(4, new User("rina", "esuanat"));
     }
 
-    public List<User> getUserDB () {
-        return new ArrayList<User>(teamDb.values());
+    private UserDao() {
     }
+    public static UserDao getInstance() {
+        if(userDbInstance == null) {
+            userDbInstance = new UserDao();
+        }
+        return userDbInstance;
+    }
+    public User findByUsername(String userName) {
+        User foundResult = null;
+        if(teamDb.containsKey(userName)) {
+            foundResult = teamDb.get(userName);
+        }
+        return foundResult;
+    }
+
+
 }
