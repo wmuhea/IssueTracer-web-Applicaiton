@@ -25,8 +25,8 @@ public class ApplicationController extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest reqest, HttpServletResponse response) throws ServletException, IOException {
-        String issueAssignedTo = (String) reqest.getSession().getAttribute("userName");
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String issueAssignedTo = (String) request.getSession().getAttribute("userName");
 
     }
 }
