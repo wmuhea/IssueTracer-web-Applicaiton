@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class IssuesDao {
+    private static IssuesDao issuesDatabase = null;
     private Map<String, Issue> IssuesDb = new HashMap<>();
 
     // For testing purpose we do init some issues here
@@ -28,10 +29,20 @@ public class IssuesDao {
     }
 
     // Default constructor
-    public IssuesDao() {
+    private IssuesDao() {
     }
 
-    public List<Issue> getIssuesDb(String username) {
+    public static IssuesDao getInstance() {
+        if(issuesDatabase == null) {
+            issuesDatabase = new IssuesDao();
+        }
+
+        return issuesDatabase;
+    }
+
+    // Instance methods for creating issue database
+
+    public List<Issue> readIssuesFromDb(String username) {
 
         return IssuesDb.entrySet().stream()
                 .filter(entry -> entry.getKey().equals(username))
