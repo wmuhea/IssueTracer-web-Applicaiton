@@ -5,7 +5,7 @@
   Time: 4:16 PM
   To change this template use File | Settings | File Templates.
 --%>
-<jsp:include page="partials/header.jsp"/>
+
 <div class="container">
     <form action="/login" method="post">
         <%--        <div class="row">--%>
@@ -29,6 +29,6 @@
         <%--        </div>--%>
     </form>
 </div>
-<jsp:include page="partials/footer.jsp"/>
+
 
 
