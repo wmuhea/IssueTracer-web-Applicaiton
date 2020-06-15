@@ -1,7 +1,7 @@
 package helpers;
 
+import Data.UserDao;
 import models.User;
-import Data.DB;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -24,7 +24,7 @@ public class LoginHelper {
     }
 
     public static boolean processLoginInfo(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
-        user = DB.getInstance().findByUsername(request.getParameter("username"));
+        user = UserDao.getInstance().findByUsername(request.getParameter("username"));
         Boolean validation = isValidCredentials(request);
 
         if (user != null && validation) {
@@ -43,7 +43,7 @@ public class LoginHelper {
             }
             response.addCookie(cookie);
             session.setAttribute("user", user);
-    System.out.println(session.getAttribute("user"));
+            System.out.println(session.getAttribute("user"));
         } else {
             errors.add("Username or password incorrect.");
         }
