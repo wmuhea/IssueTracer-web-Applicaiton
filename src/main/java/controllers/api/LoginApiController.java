@@ -1,5 +1,6 @@
 package controllers.api;
 
+import com.google.gson.Gson;
 import helpers.LoginHelper;
 
 import javax.servlet.ServletException;
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet(name = "LoginApiController", urlPatterns = "/api/login")
 public class LoginApiController extends HttpServlet {
@@ -16,11 +18,21 @@ public class LoginApiController extends HttpServlet {
         HttpSession session = request.getSession();
         Boolean validation = LoginHelper.processLoginInfo(request, response, session);
 
+        Gson gson = new Gson();
+        PrintWriter out = response.getWriter(); //writer for response
+
         if (validation) {
-//            response.sendRedirect("/app");
+            response.setStatus(200);
+            out.print(gson.toJson("Success"));
         } else {
-            session.setAttribute("errors", String.join("<br/>", LoginHelper.getErrors()));
+            response.setStatus(500);
+            out.print(gson.toJson(LoginHelper.getErrors()));
             LoginHelper.clearErrors();
         }
+
+        out.flush(); //response writer
     }
+
+
 }
+
