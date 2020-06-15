@@ -1,6 +1,7 @@
 package Data;
 
 import models.Issue;
+import storage.IssuesStorage;
 
 import java.util.HashMap;
 import java.util.List;
@@ -30,6 +31,16 @@ public class IssuesDao {
 
     // Default constructor
     private IssuesDao() {
+    }
+
+    public boolean writeDb() {
+        IssuesStorage.init();
+//        return IssuesStorage.writeDb(IssuesDb);
+        return true;
+    }
+
+    public void loadDb() {
+
     }
 
     public static IssuesDao getInstance() {
