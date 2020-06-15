@@ -25,7 +25,7 @@ $(function () {
     loginButton.click(function (event) {
         event.preventDefault();
         let self = this;
-        $.post("/login", {username: $('#username').val(), password: $('#password').val()})
+        $.post("/api/login", {username: $('#username').val(), password: $('#password').val()})
             .done(function (response) {
                 $(this).attr('disabled', false);
                 location.href = "/app";

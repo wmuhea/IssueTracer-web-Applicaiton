@@ -1,4 +1,5 @@
 
+<jsp:include page="../partials/header.jsp"/>
 
 <h1>Welcome ${username}</h1>
 
