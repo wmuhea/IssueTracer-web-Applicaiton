@@ -43,7 +43,6 @@ public class LoginHelper {
             }
             response.addCookie(cookie);
             session.setAttribute("user", user);
-            System.out.println(session.getAttribute("user"));
         } else {
             errors.add("Username or password incorrect.");
         }

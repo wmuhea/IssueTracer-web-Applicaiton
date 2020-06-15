@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
     $("#create-issue-form").submit(function (event) {
         event.preventDefault();
         let issue = $("#issue");
@@ -9,7 +11,7 @@ $(document).ready(function () {
 
         if ((issue.val().length > 0) && (description.val().length > 0) && (assignTo.val().length > 0)) {
             $.ajax({
-                url: "/createIssue",
+                url: "/api/issues",
                 method: "post",
                 data: {
                     issue: issue.val(),

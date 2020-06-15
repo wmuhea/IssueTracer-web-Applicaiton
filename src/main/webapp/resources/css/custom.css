@@ -20,6 +20,6 @@
     }
 }
 
-.errorMsg{
+.errorMsg, .errors{
     color: red;
 }

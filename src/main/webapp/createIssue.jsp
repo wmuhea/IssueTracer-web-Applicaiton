@@ -21,10 +21,10 @@
     </select><br>
     <label for="assign" > Assign to:</label>
     <select name ="assign" id="assign">
-        <option>Wondwosen</option>
-        <option> Tijesunimi</option>
-        <option> Rina</option>
-        <option> Ruby</option>
+        <option value="wonde">Wondwosen</option>
+        <option value="tije"> Tijesunimi</option>
+        <option value="rina"> Rina</option>
+        <option value="ruby"> Ruby</option>
     </select><br>
 
     <button type="submit" id="createIssueButton">Submit</button>

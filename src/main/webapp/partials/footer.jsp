@@ -27,11 +27,11 @@
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Departments</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Grades</a></li>
-                        <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Academic Honor Code</a></li>
-                        <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Academic Policies</a></li>
-                        <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Campus Safety Violations</a></li>
-                        <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Student Life Issues</a></li>
+                        <li><a href="/#services-section"><span class="icon-long-arrow-right mr-2"></span>Grades</a></li>
+                        <li><a href="/#services-section"><span class="icon-long-arrow-right mr-2"></span>Academic Honor Code</a></li>
+                        <li><a href="/#services-section"><span class="icon-long-arrow-right mr-2"></span>Academic Policies</a></li>
+                        <li><a href="/#services-section"><span class="icon-long-arrow-right mr-2"></span>Campus Safety Violations</a></li>
+                        <li><a href="/#services-section"><span class="icon-long-arrow-right mr-2"></span>Student Life Issues</a></li>
                     </ul>
                 </div>
             </div>
@@ -81,8 +81,12 @@
 <script src="../resources/js/google-map.js"></script>
 
 <script src="../resources/js/main.js"></script>
+
+<script src="../resources/js/loginProfile.js"></script>
+
 <script src="../resources/js/dashboard.js"></script>
 <script src="../resources/js/issueValidation.js"></script>
+
 
 </body>
 </html>
