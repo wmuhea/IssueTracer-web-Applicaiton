@@ -3,7 +3,7 @@ package models;
 import java.util.UUID;
 
 public class Issue {
-    private UUID issueId;
+    private String issueId;
     private String issueCategory;
     private String issueDescription;
     private String issueSeverity;
@@ -13,14 +13,15 @@ public class Issue {
     }
 
     public Issue(String issueCategory, String issueDescription, String issueSeverity, String assignedTo) {
+        this.issueId = UUID.randomUUID().toString().substring(0, 5);
         this.issueCategory = issueCategory;
         this.issueDescription = issueDescription;
         this.issueSeverity = issueSeverity;
         this.assignedTo = assignedTo;
-        randomlyAssignIssueId();
     }
 
-    public UUID getIssueId() {
+
+    public String getIssueId() {
         return issueId;
     }
 
@@ -56,8 +57,5 @@ public class Issue {
         this.assignedTo = assignedTo;
     }
 
-    public void randomlyAssignIssueId () {
-       UUID randomId = UUID.randomUUID();
-       this.issueId = randomId;
-    }
+
 }

@@ -48,7 +48,7 @@ public class ApplicationController extends HttpServlet {
             response.setCharacterEncoding("UTF-8");
             response.setContentType("application/json");
             out.print(jsonListOfIssues);
-//            out.flush();
+
         }
 
     }
