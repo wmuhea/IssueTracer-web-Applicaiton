@@ -1,10 +1,12 @@
-<jsp:include page="../partials/header.jsp"/>
+
 
 <h1>Welcome ${username}</h1>
 
 <div>
     <a href="/logout">Logout</a>
+    <a href="/profile">My Profile</a>
 </div>
+
 <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
@@ -22,3 +24,4 @@
     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
 </div>
 <jsp:include page="../partials/footer.jsp"/>
+

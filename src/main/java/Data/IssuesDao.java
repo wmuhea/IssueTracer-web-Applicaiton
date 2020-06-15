@@ -29,16 +29,19 @@ public class IssuesDao {
     }
 
     public boolean writeDb() {
+        System.out.println("-------------< DB Write >-------------");
         return IssuesStorage.writeDb(issuesDb);
     }
 
     public void loadDb() {
+        System.out.println("-------------< DB Load >-------------");
         issuesDb = IssuesStorage.load();
     }
 
     public static IssuesDao getInstance() {
         if (issuesDatabase == null) {
             issuesDatabase = new IssuesDao();
+            issuesDatabase.loadDb();
         }
 
         return issuesDatabase;
@@ -47,7 +50,9 @@ public class IssuesDao {
     // Instance methods for creating issue database
 
     public List<Issue> readIssuesFromDb(String username) {
-        return issuesDb.get(username);
+        List<Issue> issues = issuesDb.get(username);
+
+        return issues == null ? new ArrayList<>() : issues;
     }
 
     public void addIssueToDb(String assignedTo, Issue newIssue) throws Exception {
