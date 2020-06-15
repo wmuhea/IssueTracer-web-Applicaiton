@@ -17,9 +17,9 @@ public class CreateIssueController extends HttpServlet {
         String issue = request.getParameter("issue");
         String description = request.getParameter("description");
         String assign = request.getParameter("assign");
-        System.out.println(issue);
-        System.out.println(description);
-        System.out.println(assign);
+//        System.out.println(issue);
+//        System.out.println(description);
+//        System.out.println(assign);
         PrintWriter out = response.getWriter();
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
@@ -28,8 +28,10 @@ public class CreateIssueController extends HttpServlet {
         if (issue.length() > 0 && description.length() > 0 && assign.length() > 0) {
             out.print(gson.toJson(new String("successful")));
 //            out.flush();
+
+
         } else {
-            out.print(gson.toJson(new String("errror")));
+            out.print(gson.toJson(new String("error")));
         }
             out.flush();
     }
