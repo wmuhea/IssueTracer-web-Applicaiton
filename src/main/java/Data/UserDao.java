@@ -7,16 +7,16 @@ import java.util.Map;
 
 public class UserDao {
 
-    private static Map<Integer, User> teamDb;
+    private static Map<String, User> teamDb;
     private static UserDao userDbInstance = null;
 
     {
-        teamDb = new HashMap<Integer, User>();
+        teamDb = new HashMap<String, User>();
 //      never delete
-        teamDb.put(1, new User("wonde", "enenegn"));
-        teamDb.put(2, new User("tije", "esunew"));
-        teamDb.put(3, new User("ruby", "esuanat"));
-        teamDb.put(4, new User("rina", "esuanat"));
+        teamDb.put("wonde", new User("wonde", "enenegn"));
+        teamDb.put("tije", new User("tije", "esunew"));
+        teamDb.put("ruby", new User("ruby", "esuanat"));
+        teamDb.put("rina", new User("rina", "esuanat"));
     }
 
     private UserDao() {

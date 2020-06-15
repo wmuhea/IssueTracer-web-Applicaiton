@@ -1,9 +1,11 @@
 package controllers.api;
 
 import Data.IssuesDao;
+import Data.UserDao;
 import com.google.gson.Gson;
 import helpers.IssueHelper;
 import models.Issue;
+import models.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,9 +14,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
-@WebServlet(name = "CreateIssueApiController", urlPatterns = "/api/issues")
-public class CreateIssueApiController extends HttpServlet {
+@WebServlet(name = "IssueApiController", urlPatterns = "/api/issues")
+public class IssueApiController extends HttpServlet {
     Gson gson = new Gson();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -42,7 +45,10 @@ public class CreateIssueApiController extends HttpServlet {
             out.print(gson.toJson("Unauthorized Access"));
         } else {
             response.setStatus(200);
-            out.print(gson.toJson(IssuesDao.getInstance().readIssuesFromDb((String) request.getSession().getAttribute("user"))));
+            User user = (User) request.getSession().getAttribute("user");
+            List<Issue> issueList = IssuesDao.getInstance().readIssuesFromDb(user.getUsername());
+            System.out.println(issueList);
+            out.print(gson.toJson(issueList));
         }
 
         out.flush();

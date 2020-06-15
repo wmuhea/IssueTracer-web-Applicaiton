@@ -5,11 +5,12 @@
 <div class="login-wrapper">
     <div class="row no-gutters block-9">
         <div class="col-md-6 form-wrapper order-md-last d-flex">
+
             <form class="bg-light p-5 login-form">
                 <h1>Login</h1>
 
                 <div class="columns twelve">
-                    <p class="errors"> </p>
+                    <p class="errors"></p>
                 </div>
 
                 <div class="form-group">
@@ -22,7 +23,7 @@
 
                 <div class="form-group">
 
-                    <input type="checkbox" name="remember_me"  value="true">  Remember me
+                    <input type="checkbox" name="remember_me" value="true"> Remember me
 
                 </div>
 

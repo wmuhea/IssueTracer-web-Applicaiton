@@ -63,9 +63,8 @@ public abstract class Storage {
 
         } catch (Exception ex) {
             ex.printStackTrace();
-        } finally {
-            return new HashMap<>();
         }
 
+        return new HashMap<>();
     }
 }
