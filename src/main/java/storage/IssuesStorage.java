@@ -11,6 +11,5 @@ import java.util.Map;
 public class IssuesStorage extends Storage {
     public static void init() {
         filename = "db.issues.json";
-        directory = "./";
     }
 }

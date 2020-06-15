@@ -14,7 +14,7 @@ public class UserDao {
         teamDb = new HashMap<Integer, User>();
 //      never delete
         teamDb.put(1, new User("wonde", "enenegn"));
-        teamDb.put(2, new User("tje", "esunew"));
+        teamDb.put(2, new User("tije", "esunew"));
         teamDb.put(3, new User("ruby", "esuanat"));
         teamDb.put(4, new User("rina", "esuanat"));
     }

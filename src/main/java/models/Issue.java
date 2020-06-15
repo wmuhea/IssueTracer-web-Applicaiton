@@ -1,7 +1,9 @@
 package models;
 
+import java.util.UUID;
+
 public class Issue {
-    private int issueId;
+    private UUID issueId;
     private String issueCategory;
     private String issueDescription;
     private String issueSeverity;
@@ -15,10 +17,11 @@ public class Issue {
         this.issueDescription = issueDescription;
         this.issueSeverity = issueSeverity;
         this.assignedTo = assignedTo;
+        randomlyAssignIssueId();
     }
 
-    public void setIssueId(int issueId) {
-        this.issueId = issueId;
+    public UUID getIssueId() {
+        return issueId;
     }
 
     public String getIssueCategory() {
@@ -54,7 +57,7 @@ public class Issue {
     }
 
     public void randomlyAssignIssueId () {
-       int randomId = (int)Math.floor(Math.random());
+       UUID randomId = UUID.randomUUID();
        this.issueId = randomId;
     }
 }

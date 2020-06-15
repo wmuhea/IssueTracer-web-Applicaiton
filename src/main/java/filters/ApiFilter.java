@@ -1,22 +1,19 @@
 package filters;
-import Data.IssuesDao;
-import Data.UserDao;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(filterName = "DbFilter")
-public class DbFilter implements Filter {
+@WebFilter(filterName = "ApiFilter", urlPatterns = "/api/*")
+public class ApiFilter implements Filter {
     public void destroy() {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-        IssuesDao.getInstance().loadDb();
-        UserDao.getInstance();
+        HttpServletResponse response = (HttpServletResponse) resp;
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("application/json");
         chain.doFilter(req, resp);
     }
 
