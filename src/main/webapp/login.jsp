@@ -5,17 +5,34 @@
 <div class="login-wrapper">
     <div class="row no-gutters block-9">
         <div class="col-md-6 form-wrapper order-md-last d-flex">
-            <form action="/login" method="post" class="bg-light p-5 login-form">
+
+            <form class="bg-light p-5 login-form">
                 <h1>Login</h1>
+
+                <div class="columns twelve">
+                    <p class="errors"></p>
+                </div>
+
                 <div class="form-group">
-                    <input type="text" name="username" class="form-control" placeholder="Username">
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Username">
                 </div>
                 <div class="form-group">
-                    <input type="password" name="password" class="form-control" placeholder="Password">
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password">
                 </div>
+
+
                 <div class="form-group">
-                    <input type="submit" value="Login" class="btn btn-primary py-3 px-5">
+
+                    <input type="checkbox" name="remember_me" value="true"> Remember me
+
                 </div>
+
+
+                <div class="form-group">
+                    <input type="submit" value="Login" id="loginButton" class="btn btn-primary py-3 px-5">
+                </div>
+
+
             </form>
 
         </div>
