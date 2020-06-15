@@ -1,10 +1,5 @@
 $(document).ready(function () {
-    $.get("/api/issues")
-        .done(function(res) {
-            console.log(res.responseJSON);
-        }).catch(function(err) {
-            console.error(new Error(err.responseJSON));
-    })
+
 
     $("#create-issue-form").submit(function (event) {
         event.preventDefault();

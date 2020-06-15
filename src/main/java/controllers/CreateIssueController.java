@@ -1,16 +1,11 @@
 package controllers;
 
-import com.google.gson.Gson;
-import helpers.IssueHelper;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.awt.print.PrinterAbortException;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet(name = "CreateIssueController", urlPatterns = "/createIssue")
 public class CreateIssueController extends HttpServlet {
