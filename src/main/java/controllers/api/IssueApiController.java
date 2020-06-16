@@ -38,17 +38,21 @@ public class IssueApiController extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
+        User user = (User) request.getSession().getAttribute("user");
 
-        if (request.getSession().getAttribute("user") == null) {
+        if (user == null) {
             response.setStatus(401);
             out.print(gson.toJson("Unauthorized Access"));
+        } else if (user.getUsername().equals("admin")){
+            List<Issue> issueList = IssuesDao.getInstance().readAllIssues();
+            out.print(gson.toJson(issueList));
         } else {
-            response.setStatus(200);
-            User user = (User) request.getSession().getAttribute("user");
             List<Issue> issueList = IssuesDao.getInstance().readIssuesFromDb(user.getUsername());
             out.print(gson.toJson(issueList));
         }
 
         out.flush();
     }
+
+
 }
