@@ -475,91 +475,91 @@
 <%--&lt;%&ndash;    </div>&ndash;%&gt;--%>
 <%--&lt;%&ndash;</section>&ndash;%&gt;--%>
 
-<%--&lt;%&ndash;		<section class="ftco-section testimony-section" id="testimony-section">&ndash;%&gt;--%>
-<%--&lt;%&ndash;      <div class="container">&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <div class="row justify-content-center pb-3">&ndash;%&gt;--%>
-<%--&lt;%&ndash;          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <h2 class="mb-4">Happy Clients</h2>&ndash;%&gt;--%>
-<%--&lt;%&ndash;          </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        <div class="row ftco-animate justify-content-center">&ndash;%&gt;--%>
-<%--&lt;%&ndash;          <div class="col-md-12">&ndash;%&gt;--%>
-<%--&lt;%&ndash;            <div class="carousel-testimony owl-carousel ftco-owl">&ndash;%&gt;--%>
-<%--&lt;%&ndash;              <div class="item">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                <div class="testimony-wrap text-center py-4 pb-5">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  <div class="user-img" style="background-image: url('./resources/images/person_1.jpg')">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <span class="quote d-flex align-items-center justify-content-center">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                      <i class="icon-quote-left"></i>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    </span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  <div class="text px-4 pb-5">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <p class="name">John Fox</p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <span class="position">Businessman</span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;              </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;              <div class="item">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                <div class="testimony-wrap text-center py-4 pb-5">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  <div class="user-img" style="background-image: url('./resources/images/person_2.jpg')">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <span class="quote d-flex align-items-center justify-content-center">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                      <i class="icon-quote-left"></i>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    </span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  <div class="text px-4 pb-5">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <p class="name">John Fox</p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <span class="position">Businessman</span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;              </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;              <div class="item">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                <div class="testimony-wrap text-center py-4 pb-5">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  <div class="user-img" style="background-image: url('./resources/images/person_3.jpg')">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <span class="quote d-flex align-items-center justify-content-center">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                      <i class="icon-quote-left"></i>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    </span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  <div class="text px-4 pb-5">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <p class="name">John Fox</p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <span class="position">Businessman</span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;              </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;              <div class="item">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                <div class="testimony-wrap text-center py-4 pb-5">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  <div class="user-img" style="background-image: url('./resources/images/person_4.jpg')">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <span class="quote d-flex align-items-center justify-content-center">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                      <i class="icon-quote-left"></i>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    </span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  <div class="text px-4 pb-5">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <p class="name">John Fox</p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <span class="position">Businessman</span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;              </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;              <div class="item">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                <div class="testimony-wrap text-center py-4 pb-5">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  <div class="user-img" style="background-image: url('./resources/images/person_3.jpg')">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <span class="quote d-flex align-items-center justify-content-center">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                      <i class="icon-quote-left"></i>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    </span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  <div class="text px-4 pb-5">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <p class="name">John Fox</p>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                    <span class="position">Businessman</span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;              </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;            </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;          </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;      </div>&ndash;%&gt;--%>
-<%--&lt;%&ndash;    </section>&ndash;%&gt;--%>
+<%--		<section class="ftco-section testimony-section" id="testimony-section">--%>
+<%--      <div class="container">--%>
+<%--        <div class="row justify-content-center pb-3">--%>
+<%--          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">--%>
+<%--            <h2 class="mb-4">Happy Clients</h2>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--        <div class="row ftco-animate justify-content-center">--%>
+<%--          <div class="col-md-12">--%>
+<%--            <div class="carousel-testimony owl-carousel ftco-owl">--%>
+<%--              <div class="item">--%>
+<%--                <div class="testimony-wrap text-center py-4 pb-5">--%>
+<%--                  <div class="user-img" style="background-image: url('./resources/images/person_1.jpg')">--%>
+<%--                    <span class="quote d-flex align-items-center justify-content-center">--%>
+<%--                      <i class="icon-quote-left"></i>--%>
+<%--                    </span>--%>
+<%--                  </div>--%>
+<%--                  <div class="text px-4 pb-5">--%>
+<%--                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>--%>
+<%--                    <p class="name">John Fox</p>--%>
+<%--                    <span class="position">Businessman</span>--%>
+<%--                  </div>--%>
+<%--                </div>--%>
+<%--              </div>--%>
+<%--              <div class="item">--%>
+<%--                <div class="testimony-wrap text-center py-4 pb-5">--%>
+<%--                  <div class="user-img" style="background-image: url('./resources/images/person_2.jpg')">--%>
+<%--                    <span class="quote d-flex align-items-center justify-content-center">--%>
+<%--                      <i class="icon-quote-left"></i>--%>
+<%--                    </span>--%>
+<%--                  </div>--%>
+<%--                  <div class="text px-4 pb-5">--%>
+<%--                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>--%>
+<%--                    <p class="name">John Fox</p>--%>
+<%--                    <span class="position">Businessman</span>--%>
+<%--                  </div>--%>
+<%--                </div>--%>
+<%--              </div>--%>
+<%--              <div class="item">--%>
+<%--                <div class="testimony-wrap text-center py-4 pb-5">--%>
+<%--                  <div class="user-img" style="background-image: url('./resources/images/person_3.jpg')">--%>
+<%--                    <span class="quote d-flex align-items-center justify-content-center">--%>
+<%--                      <i class="icon-quote-left"></i>--%>
+<%--                    </span>--%>
+<%--                  </div>--%>
+<%--                  <div class="text px-4 pb-5">--%>
+<%--                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>--%>
+<%--                    <p class="name">John Fox</p>--%>
+<%--                    <span class="position">Businessman</span>--%>
+<%--                  </div>--%>
+<%--                </div>--%>
+<%--              </div>--%>
+<%--              <div class="item">--%>
+<%--                <div class="testimony-wrap text-center py-4 pb-5">--%>
+<%--                  <div class="user-img" style="background-image: url('./resources/images/person_4.jpg')">--%>
+<%--                    <span class="quote d-flex align-items-center justify-content-center">--%>
+<%--                      <i class="icon-quote-left"></i>--%>
+<%--                    </span>--%>
+<%--                  </div>--%>
+<%--                  <div class="text px-4 pb-5">--%>
+<%--                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>--%>
+<%--                    <p class="name">John Fox</p>--%>
+<%--                    <span class="position">Businessman</span>--%>
+<%--                  </div>--%>
+<%--                </div>--%>
+<%--              </div>--%>
+<%--              <div class="item">--%>
+<%--                <div class="testimony-wrap text-center py-4 pb-5">--%>
+<%--                  <div class="user-img" style="background-image: url('./resources/images/person_3.jpg')">--%>
+<%--                    <span class="quote d-flex align-items-center justify-content-center">--%>
+<%--                      <i class="icon-quote-left"></i>--%>
+<%--                    </span>--%>
+<%--                  </div>--%>
+<%--                  <div class="text px-4 pb-5">--%>
+<%--                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>--%>
+<%--                    <p class="name">John Fox</p>--%>
+<%--                    <span class="position">Businessman</span>--%>
+<%--                  </div>--%>
+<%--                </div>--%>
+<%--              </div>--%>
+<%--            </div>--%>
+<%--          </div>--%>
+<%--        </div>--%>
+<%--      </div>--%>
+<%--    </section>--%>
 
 <%--&lt;%&ndash;<section class="ftco-section bg-light" id="blog-section">&ndash;%&gt;--%>
 <%--&lt;%&ndash;    <div class="container">&ndash;%&gt;--%>

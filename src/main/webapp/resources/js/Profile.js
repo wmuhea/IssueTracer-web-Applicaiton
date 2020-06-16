@@ -1,5 +1,5 @@
 $(function () {
-    let createButton = $('#createProfileButton');
+    let createProfileButton = $('#createProfileButton');
     let firstname = $("#firstname");
     let lastname = $("#lastname");
     let phone = $("#phone");
@@ -7,7 +7,8 @@ $(function () {
     let department = $("#department");
     let errorStatus=$(".errorsProfile");
 
-    createButton.click(function (event) {
+    createProfileButton.click(function (event) {
+        console.log("This is the ");
         event.preventDefault();
 
 
@@ -22,13 +23,15 @@ $(function () {
                     address: address.val(),
                     department: department.val()
                 }
-            }).done(function (response) {
-                console.log(response);
+            }).done(function () {
+                errorStatus.text("Profile successfully created.");
 
-            }).fail(function (response) {
-                console.log(response);
+            }).error(function (response) {
+                let err = (response.responseJSON);
+                $('.errors').text(err.join("<br/>"));
+                $(self).attr('disabled', false);
             })
-            errorStatus.text("Profile successfully created.");
+
         }
         else {
             errorStatus.text("Please fill all the fields.");
@@ -41,6 +44,8 @@ $(function () {
 
 
     });
+
+
 
 });
 

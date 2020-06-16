@@ -25,7 +25,7 @@
 }
 
 
-.successMsg{
+.successMsg, .errorsProfile{
     color: green;
 }
 

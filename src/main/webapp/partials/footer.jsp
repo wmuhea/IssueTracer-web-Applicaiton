@@ -86,6 +86,7 @@
 
 <script src="../resources/js/dashboard.js"></script>
 <script src="../resources/js/issueValidation.js"></script>
+<script src="../resources/js/Profile.js"></script>
 
 
 </body>

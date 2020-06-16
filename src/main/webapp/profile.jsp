@@ -1,5 +1,7 @@
 <jsp:include page="/partials/header.jsp"/>
 <jsp:include page="/partials/nav.jsp"/>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
 
@@ -9,7 +11,7 @@
         <div class="row d-flex">
             <div class="col-md-6 col-lg-5 d-flex">
                 <div class="img d-flex align-self-stretch align-items-center"
-                     style="background-image:url('./resources/images/about.jpg'); margin-top: 80px; margin-bottom: 80px">
+                     style="background-image:url('/resources/images/person_1.jpg'); margin-top: 80px; margin-bottom: 80px">
                 </div>
             </div>
             <div class="col-md-6 col-lg-7 pl-lg-5 py-5">
@@ -25,17 +27,17 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" id="firstname" name="firstname" class="form-control" placeholder="John" required>
+                                    <input type="text" value="${user.firstname}" id="firstname" name="firstname" class="form-control" placeholder="John" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Doe">
+                                    <input type="text" id="lastname" value="${user.lastname}" name="lastname" class="form-control" placeholder="Doe">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" id="phone" name="phone" class="form-control" placeholder="+1 23456678" required >
+                                    <input type="text" id="phone" name="phone" value="${user.phone}" class="form-control" placeholder="+1 23456678" required >
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" id="address" name="address" class="form-control" placeholder="1000N street, Fairfield IA" required>
+                                    <input type="text" id="address" name="address" value="${user.address}" class="form-control" placeholder="1000N street, Fairfield IA" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="department" > Department </label>

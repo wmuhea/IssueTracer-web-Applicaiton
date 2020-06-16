@@ -1,3 +1,6 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
     <div class="container">
         <a class="navbar-brand" href="/">Issue<span>Tracer</span></a>
@@ -13,9 +16,19 @@
                 <li class="nav-item"><a href="/#about-section" class="nav-link"><span>About</span></a></li>
 <%--                <li class="nav-item"><a href="#testimony-section" class="nav-link"><span>Testimony</span></a></li>--%>
 <%--                <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>--%>
-                <li class="nav-item"><a href="/profile" class="nav-link"><span>Profile</span></a></li>
+                <c:if test="${user != null}">
+                    <li class="nav-item"><a href="/app/profile" class="nav-link"><span> Profile</span></a></li>
+                </c:if>
+
                 <li class="nav-item"><a href="/createIssue" class="nav-link"><span>Create Issue</span></a></li>
-                <li class="nav-item"><a href="/login" class="nav-link"><span>Login</span></a></li>
+
+
+                <c:if test="${user != null}">
+                    <li class="nav-item"><a href="/logout" class="nav-link"><span> Logout</span></a></li>
+                </c:if>
+                <c:if  test="${user == null}"> <li class="nav-item"><a href="/login" class="nav-link"><span>Login</span></a></li></c:if>
+
+
             </ul>
         </div>
     </div>
