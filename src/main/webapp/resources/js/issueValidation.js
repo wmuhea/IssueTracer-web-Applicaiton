@@ -1,12 +1,4 @@
 $(document).ready(function () {
-    $.get("/api/issues")
-        .done(function(response) {
-            console.log(response);
-        })
-        .catch(function(err) {
-            console.log(err);
-        })
-
     $("#create-issue-form").submit(function (event) {
         event.preventDefault();
         let issue = $("#issue");
@@ -46,4 +38,36 @@ $(document).ready(function () {
 
     });
 
+    function deleteBtnHandler(e) {
+        e.preventDefault();
+        console.log("Issue ", $(this).data("issueId"), " is about to be deleted");
+    }
+
+    function displayIssueOnAdmin(issues) {
+        let text = $("#issue-item-template").text();
+        let container = $("#issues");
+        let issueElem = $(text);
+        console.log(issues);
+        issues.forEach(function(_item) {
+            let item = issueElem.clone();
+
+            item.attr("data-issue-id", _item.issueId);
+            item.find('.issue-title').text(_item.issueCategory);
+            item.find('.description').text(_item.issueDescription);
+            item.find(".issue-item-action").attr("data-issue-id", _item.issueId).click(deleteBtnHandler);
+
+            container.append(item);
+        });
+    }
+
+    if(window.location.pathname === "/app/admin") {
+        console.log("Getting the issues");
+        $.get("/api/issues")
+            .done(function (response) {
+                displayIssueOnAdmin(response);
+            })
+            .catch(function (err) {
+                console.log(err);
+            })
+    }
 });

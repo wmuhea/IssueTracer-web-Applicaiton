@@ -17,6 +17,7 @@ public class UserDao {
         teamDb.put("tije", new User("tije", "esunew"));
         teamDb.put("ruby", new User("ruby", "esuanat"));
         teamDb.put("rina", new User("rina", "esuanat"));
+        teamDb.put("admin", new User("admin","admin"));
     }
 
     private UserDao() {
