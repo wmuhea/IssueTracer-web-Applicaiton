@@ -8,6 +8,7 @@ public class Issue {
     private String issueDescription;
     private String issueSeverity;
     private String assignedTo;
+    private String status;
 
     public Issue() {
     }
@@ -18,6 +19,7 @@ public class Issue {
         this.issueDescription = issueDescription;
         this.issueSeverity = issueSeverity;
         this.assignedTo = assignedTo;
+        this.status  = "NR";
     }
 
 
@@ -57,5 +59,15 @@ public class Issue {
         this.assignedTo = assignedTo;
     }
 
+    public void setIssueId(String issueId) {
+        this.issueId = issueId;
+    }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }

@@ -1,5 +1,6 @@
 package Data;
 
+import com.google.gson.internal.LinkedTreeMap;
 import models.Issue;
 import storage.IssuesStorage;
 
@@ -65,8 +66,21 @@ public class IssuesDao {
         }
     }
 
-    public void removeIssue(String assignedTo, Issue issue) {
-        issuesDb.get(assignedTo).remove(issue);
+    public void removeIssue(String assignedTo, String issueId) {
+        System.out.println(issueId);
+        List<Issue> issues = (List<Issue>) issuesDb.get(assignedTo);
+
+        System.out.println(((Issue) issues.get(0)).getIssueId());
+
+
+        for(int i = 0; i < issues.size(); i++) {
+  //          if(issues.get(i).getIssueId().equals(issueId)) {
+                System.out.println(issues.get(i).getClass());
+           //System.out.println(i);
+  //          }
+        }
+
+
     }
 
 }

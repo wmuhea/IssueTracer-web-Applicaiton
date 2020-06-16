@@ -46,7 +46,15 @@ public class IssueApiController extends HttpServlet {
         } else if (user.getUsername().equals("admin")){
             List<Issue> issueList = IssuesDao.getInstance().readAllIssues();
             out.print(gson.toJson(issueList));
-        } else {
+        }else {
+
+            String issueId = request.getParameter("Id");
+
+            if(request.getParameter("Id") != null) {
+                System.out.println("---about to delete----");
+                IssuesDao.getInstance().removeIssue(user.getUsername(), issueId);
+            }
+
             List<Issue> issueList = IssuesDao.getInstance().readIssuesFromDb(user.getUsername());
             out.print(gson.toJson(issueList));
         }
