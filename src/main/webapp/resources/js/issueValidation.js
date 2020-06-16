@@ -41,6 +41,7 @@ $(document).ready(function () {
     function deleteBtnHandler(e) {
         e.preventDefault();
         console.log("Issue ", $(this).data("issueId"), " is about to be deleted");
+        $(this).closest($(".issue-item")).remove();
     }
 
     function displayIssueOnAdmin(issues) {
