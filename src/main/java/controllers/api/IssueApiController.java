@@ -21,38 +21,38 @@ public class IssueApiController extends HttpServlet {
     Gson gson = new Gson();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String issue = request.getParameter("issue");
-        String description = request.getParameter("description");
-        String assign = request.getParameter("assign");
-        String severity = request.getParameter("severity");
+        Issue issue = IssueHelper.processRequest(request);
         PrintWriter out = response.getWriter();
 
-        if (issue.length() > 0 && description.length() > 0 && severity.length() >0 && assign.length() > 0) {
+        if (issue != null) {
             response.setStatus(202);
-            Issue issue1 = IssueHelper.processRequest(request);
-            out.print(gson.toJson(issue1));
+            out.print(gson.toJson(issue));
 
         } else {
             response.setStatus(500);
-            out.print(gson.toJson("Error"));
+            out.print(gson.toJson(IssueHelper.getErrors()));
         }
+
         out.flush();
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
+        User user = (User) request.getSession().getAttribute("user");
 
-        if (request.getSession().getAttribute("user") == null) {
+        if (user == null) {
             response.setStatus(401);
             out.print(gson.toJson("Unauthorized Access"));
+        } else if (user.getUsername().equals("admin")){
+            List<Issue> issueList = IssuesDao.getInstance().readAllIssues();
+            out.print(gson.toJson(issueList));
         } else {
-            response.setStatus(200);
-            User user = (User) request.getSession().getAttribute("user");
             List<Issue> issueList = IssuesDao.getInstance().readIssuesFromDb(user.getUsername());
-            System.out.println(issueList);
             out.print(gson.toJson(issueList));
         }
 
         out.flush();
     }
+
+
 }

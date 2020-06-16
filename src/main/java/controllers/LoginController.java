@@ -12,6 +12,7 @@ import java.io.PrintWriter;
 
 @WebServlet(name = "LoginController", urlPatterns = "/login")
 public class LoginController extends HttpServlet implements IPageName {
+<<<<<<< HEAD
     @Override
     public void setPageName(HttpServletRequest request) {
         request.setAttribute("pageTitle", this.getServletName().replace("Controller", ""));
@@ -41,9 +42,11 @@ public class LoginController extends HttpServlet implements IPageName {
         out.flush(); //response writer
     }
 
+=======
+>>>>>>> 01a94069b86569b8a2d219a534e6a2b4625a9cb7
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if(request.getSession().getAttribute("redirectUrl") == null) {
-            setPageName(request);
+            setPageName(request, this.getServletName());
             request.getRequestDispatcher("/login.jsp").forward(request, response);
         } else{
             response.sendRedirect((String) request.getAttribute("redirectUrl"));

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>${pageTitle} <c:if test="${pageTitle}" var="|" /> Issue Tracer</title>
+    <title>${pageTitle} <c:if test="${pageTitle != null}"> | </c:if> Issue Tracer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

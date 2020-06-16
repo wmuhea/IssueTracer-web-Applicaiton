@@ -1,14 +1,12 @@
 
 <jsp:include page="../partials/header.jsp"/>
+<jsp:include page="../partials/nav.jsp"/>
 
-<h1 id = "profileNote">Welcome</h1>
+<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="db-section">
+    <div id="dboard" class="container">
 
-<div>
-    <a href="/logout">Logout</a>
+    </div>
+</section>
 
-</div>
-
-
-<main role="main" class="container"></main>
 <jsp:include page="../partials/footer.jsp"/>
 
