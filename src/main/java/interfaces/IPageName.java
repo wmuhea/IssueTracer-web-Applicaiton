@@ -3,5 +3,7 @@ package interfaces;
 import javax.servlet.http.HttpServletRequest;
 
 public interface IPageName {
-    public void setPageName(HttpServletRequest request );
+    default void setPageName(HttpServletRequest request, String name) {
+        request.setAttribute("pageTitle", name.replace("Controller", ""));
+    }
 }
