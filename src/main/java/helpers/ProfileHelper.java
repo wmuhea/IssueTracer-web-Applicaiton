@@ -1,23 +1,27 @@
 package helpers;
 
+import models.User;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class ProfileHelper {
 
-    public static boolean isValid(HttpServletRequest request, HttpServletResponse response) {
+    public static User processUserProfile(HttpServletRequest request, HttpServletResponse response) {
         String firstname = request.getParameter("firstname");
         String lastname = request.getParameter("lastname");
         String address = request.getParameter("address");
         String phone = request.getParameter("phone");
         String department = request.getParameter("department");
+        User user = (User) request.getSession().getAttribute("username");
+        user.setFirstname(firstname);
+        user.setLastname(lastname);
+        user.setAddress(address);
+        user.setPhone(phone);
+        user.setDepartment(department);
 
-        if (firstname == null) return false;
-        if (lastname == null) return false;
-        if (address == null) return false;
-        if (phone == null  ) return false;
-        if (department == null) return false;
+        return  user;
 
-        return true;
     }
+
 }
