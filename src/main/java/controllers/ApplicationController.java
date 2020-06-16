@@ -21,34 +21,10 @@ public class ApplicationController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        System.out.println(request.getParameter("param"));
-        // Main code from Tj
- /*       if (request.getAttribute("redirectUrl") == null) {
+       if (request.getAttribute("redirectUrl") == null) {
             request.getRequestDispatcher("/app/dashboard.jsp").forward(request, response);
         }else{
             response.sendRedirect((String) request.getAttribute("redirectUrl"));
-        }
-
-  */    // the below if is included for test. It should be removed in the normal code
-        // It is used to redirect to the dashboard page since redirect URl is not working now
-        if (request.getParameter("param") == null) {
-            request.getRequestDispatcher("/app/dashboard.jsp").forward(request, response);
-        } else if (request.getParameter("param").equals("assignedIssues")){
-            // The two commented out codes should be included in the main code
-            //  User loggedInUser = (User) request.getSession().getAttribute("user");
-            //  List<Issue> issuesAssignedToUser = IssuesDao.getInstance().readIssuesFromDb(loggedInUser.getUsername());
-
-            //  for test now delete the below code and uncomment the above after the login is set
-
-
-            List<Issue> issuesAssignedToUser = IssuesDao.getInstance().readIssuesFromDb("wonde");
-            String jsonListOfIssues = objectJsonConverter.toJson(issuesAssignedToUser);
-            System.out.println(jsonListOfIssues);
-            PrintWriter out = response.getWriter();
-            response.setCharacterEncoding("UTF-8");
-            response.setContentType("application/json");
-            out.print(jsonListOfIssues);
-
         }
 
     }
