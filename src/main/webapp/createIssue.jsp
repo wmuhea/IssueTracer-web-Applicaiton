@@ -15,6 +15,7 @@
                         <p class="successMsg"></p>
                     </div>
 
+
                     <div class="form-group">
                         <label for="issue">Issue </label>
                         <select name="issue" id="issue">
@@ -67,4 +68,5 @@
                  style="background-image: url('./resources/images/project-1.jpg');height: 100vh;width: 100%;"></div>
         </div>
     </div>
+</div>
 <jsp:include page="partials/footer.jsp"/>
