@@ -24,12 +24,14 @@ public class IssueApiController extends HttpServlet {
         String issue = request.getParameter("issue");
         String description = request.getParameter("description");
         String assign = request.getParameter("assign");
+        String severity = request.getParameter("severity");
         PrintWriter out = response.getWriter();
 
-        if (issue.length() > 0 && description.length() > 0 && assign.length() > 0) {
+        if (issue.length() > 0 && description.length() > 0 && severity.length() >0 && assign.length() > 0) {
             response.setStatus(202);
             Issue issue1 = IssueHelper.processRequest(request);
             out.print(gson.toJson(issue1));
+
         } else {
             response.setStatus(500);
             out.print(gson.toJson("Error"));
