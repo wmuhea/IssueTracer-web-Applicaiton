@@ -1,6 +1,6 @@
 
 <jsp:include page="../partials/header.jsp"/>
-<jsp:include page="../partials/nav.jsp"/>
+<jsp:include page="../partials/nav1.jsp"/>
 
 <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="db-section">
     <div id="dboard" class="container">
