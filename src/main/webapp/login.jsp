@@ -20,14 +20,6 @@
                     <input type="password" id="password" name="password" class="form-control" placeholder="Password">
                 </div>
 
-
-<%--                <div class="form-group">--%>
-
-<%--                    <input type="checkbox" id="remember_me" name="remember_me" value="true"> Remember me--%>
-
-<%--                </div>--%>
-
-
                 <div class="form-group">
                     <input type="submit" value="Login" id="loginButton" class="btn btn-primary py-3 px-5">
                 </div>

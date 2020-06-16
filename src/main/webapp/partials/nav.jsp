@@ -13,7 +13,7 @@
                 <li class="nav-item"><a href="/#about-section" class="nav-link"><span>About</span></a></li>
 <%--                <li class="nav-item"><a href="#testimony-section" class="nav-link"><span>Testimony</span></a></li>--%>
 <%--                <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>--%>
-                <li class="nav-item"><a href="/#contact-section" class="nav-link"><span>Contact</span></a></li>
+                <li class="nav-item"><a href="/profile" class="nav-link"><span>Profile</span></a></li>
                 <li class="nav-item"><a href="/createIssue" class="nav-link"><span>Create Issue</span></a></li>
                 <li class="nav-item"><a href="/login" class="nav-link"><span>Login</span></a></li>
             </ul>

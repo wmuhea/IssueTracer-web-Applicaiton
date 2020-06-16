@@ -31,4 +31,4 @@
 </div>
 </form>
 
-<jsp:include page="partials/footer.jsp" />
+<jsp:include page="partials/footer.jsp" />3
