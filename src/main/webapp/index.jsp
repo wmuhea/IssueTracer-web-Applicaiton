@@ -21,7 +21,7 @@
                             <h1 class="mb-4 mt-3">Your Complaints <span>Matter</span></h1>
                             <p>A problem shared is a problem is solved</p>
 
-                            <p><a href="/login" class="btn btn-primary px-5 py-3 mt-3">Submit a complaint</a></p>
+                            <p><a href="/createIssue" class="btn btn-primary px-5 py-3 mt-3">Submit a complaint</a></p>
                         </div>
                     </div>
                 </div>

@@ -8,6 +8,7 @@ $(document).ready(function () {
         let assignTo = $("#assign");
         let severity = $("#severity");
         let error = $(".errorMsg");
+        let success=$(".successMsg");
 
         if ((issue.val().length > 0) && (description.val().length > 0) && (assignTo.val().length > 0)) {
             $.ajax({
@@ -25,9 +26,10 @@ $(document).ready(function () {
             }).fail(function (response) {
                 console.log(response);
             })
+            success.text("Issue successfully created.");
         }
             else {
-                error.text("Please fill all the fields");
+                error.text("Please fill all the fields.");
             }
 
         issue.val(" ");

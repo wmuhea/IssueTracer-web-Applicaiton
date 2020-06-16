@@ -9,8 +9,9 @@ public class IssueHelper {
     public static Issue processRequest(HttpServletRequest request) {
         String issue = request.getParameter("issue");
         String description = request.getParameter("description");
+        String severity = request.getParameter("severity");
         String assign = request.getParameter("assign");
-        Issue issue1 = new Issue("Programming", description , "high", assign);
+        Issue issue1 = new Issue(issue, description , severity, assign);
 
         try {
             IssuesDao.getInstance().addIssueToDb(assign, issue1);
