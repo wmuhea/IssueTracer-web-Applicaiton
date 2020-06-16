@@ -3,7 +3,6 @@ package Data;
 import models.Issue;
 import storage.IssuesStorage;
 
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -30,6 +29,8 @@ public class IssuesDao {
         issuesDb = IssuesStorage.load();
     }
 
+
+
     public static IssuesDao getInstance() {
         if (issuesDatabase == null) {
             issuesDatabase = new IssuesDao();
@@ -40,12 +41,16 @@ public class IssuesDao {
     }
 
     // Instance methods for creating issue database
-
     public List<Issue> readIssuesFromDb(String username) {
         List<Issue> issues = issuesDb.get(username);
 
         return issues == null ? new ArrayList<>() : issues;
     }
+
+    public List<Issue> readAllIssues(){
+        return issuesDb.values().stream().flatMap(x -> x.stream()).collect(Collectors.toList());
+    }
+
 
     public void addIssueToDb(String assignedTo, Issue newIssue) throws Exception {
 
