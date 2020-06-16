@@ -9,14 +9,9 @@ import java.io.IOException;
 
 @WebServlet(name = "LoginController", urlPatterns = "/login")
 public class LoginController extends HttpServlet implements IPageName {
-    @Override
-    public void setPageName(HttpServletRequest request) {
-        request.setAttribute("pageTitle", this.getServletName().replace("Controller", ""));
-    }
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if(request.getSession().getAttribute("redirectUrl") == null) {
-            setPageName(request);
+            setPageName(request, this.getServletName());
             request.getRequestDispatcher("/login.jsp").forward(request, response);
         } else{
             response.sendRedirect((String) request.getAttribute("redirectUrl"));
