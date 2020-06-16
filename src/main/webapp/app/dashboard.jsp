@@ -1,7 +1,10 @@
 
 <jsp:include page="../partials/header.jsp"/>
+<jsp:include page="../partials/nav1.jsp"/>
 
-<h1>Welcome ${username}</h1>
+<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="db-section">
+    <div id="dboard" class="container">
+
 
 <div>
     <a href="/logout">Logout</a>
@@ -24,5 +27,10 @@
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
 </div>
+
+    </div>
+</section>
+
+
 <jsp:include page="../partials/footer.jsp"/>
 

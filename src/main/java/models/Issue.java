@@ -3,24 +3,27 @@ package models;
 import java.util.UUID;
 
 public class Issue {
-    private UUID issueId;
+    private String issueId;
     private String issueCategory;
     private String issueDescription;
     private String issueSeverity;
     private String assignedTo;
+    private String status;
 
     public Issue() {
     }
 
     public Issue(String issueCategory, String issueDescription, String issueSeverity, String assignedTo) {
+        this.issueId = UUID.randomUUID().toString().substring(0, 5);
         this.issueCategory = issueCategory;
         this.issueDescription = issueDescription;
         this.issueSeverity = issueSeverity;
         this.assignedTo = assignedTo;
-        randomlyAssignIssueId();
+        this.status  = "NR";
     }
 
-    public UUID getIssueId() {
+
+    public String getIssueId() {
         return issueId;
     }
 
@@ -56,8 +59,15 @@ public class Issue {
         this.assignedTo = assignedTo;
     }
 
-    public void randomlyAssignIssueId () {
-       UUID randomId = UUID.randomUUID();
-       this.issueId = randomId;
+    public void setIssueId(String issueId) {
+        this.issueId = issueId;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
