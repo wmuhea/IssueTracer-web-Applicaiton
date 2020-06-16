@@ -14,17 +14,6 @@ public class IssuesDao {
     // For testing purpose we do init some issues here
     {
         IssuesStorage.init();
-//        Issue javaIssue1 = new Issue("Programming","Java Issues", "high", "wonde");
-//        javaIssue1.randomlyAssignIssueId();
-//        Issue javaIssue2 = new Issue("Programming","Java Issues", "high", "wonde");
-//        javaIssue2.randomlyAssignIssueId();
-//        Issue javaIssue3 = new Issue("Programming","Java Issues", "high", "wonde");
-//        javaIssue3.randomlyAssignIssueId();
-//        Issue javaIssue4 = new Issue("Programming","Java Issues", "high", "wonde");
-//        javaIssue4.randomlyAssignIssueId();
-//
-//        Issue [] issuesAssignedToUser = new Issue[] {javaIssue1, javaIssue2, javaIssue3, javaIssue4};
-//        issuesDb.put(javaIssue1.getAssignedTo(), Arrays.asList(issuesAssignedToUser));
     }
 
     // Default constructor
@@ -74,6 +63,5 @@ public class IssuesDao {
     public void removeIssue(String assignedTo, Issue issue) {
         issuesDb.get(assignedTo).remove(issue);
     }
-
 
 }
