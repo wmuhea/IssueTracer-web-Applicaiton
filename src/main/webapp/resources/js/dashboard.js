@@ -7,13 +7,8 @@
         $.get('/api/issues')
             .done(dashBoardModule.loadData)
             .error(dashBoardModule.printError);
-
-/*        $('#ftco-nav ul:first li:last a').click = $.get('/logout')
-            .done(updateNavBarOnLogout)
-            .error(printErrorMessage);
-
- */
-        window.deleteData = dashBoardModule.deleteData;
+        $('#logout').on('click',dashBoardModule.logout);
+            window.deleteData = dashBoardModule.deleteData;
 
     });
     let dashBoardModule = (function () {
@@ -79,36 +74,23 @@
             }
         };
 
-        const updateNavBarOnLogin = function () {
-            console.log("ezihga");
-            $('#ftco-nav ul:first li:nth-child(4)').addClass("d-none");
-            $('#ftco-nav ul:first li:first a').html("DashBoard").attr("href", "/app/dashboard.jsp");
-            $('#ftco-nav ul:first li:last a').html("Logout");
-        };
-        const updateNavBarOnLogout = function () {
-            console.log("enega");
-            $('#ftco-nav ul:first li:nth-child(4)').removeClass("d-none");
-            $('#ftco-nav ul:first li:first a').html("Home").attr("href", "/");
-            $('#ftco-nav ul:first li:last a').html("Login");
-
-        };
-
 
         return {
             loadData: function (data) {
-                        updateNavBarOnLogin();
                         $('body').css('padding-top', '60px')
                         data.forEach(issue => appendIssue(issue));
             },
             deleteData: function (del, event) {
                 let issueId = $(del).attr('id');
                 console.log(issueId);
-
                 $.get("/api/issues", {"Id": issueId}, dashBoardModule.loadData,'jason');
 
             },
             printError: function (data) {
                 console.log(data.responseText);
+            },
+            logout : function () {
+                    $.get("/logout");
             }
 
         };
