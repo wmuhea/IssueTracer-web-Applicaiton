@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(filterName = "SessionFilter")
+@WebFilter(filterName = "SessionFilter", urlPatterns = "/login")
 public class SessionFilter implements Filter {
     private HttpSession session;
     private HttpServletRequest request;

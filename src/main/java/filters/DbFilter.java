@@ -9,13 +9,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(filterName = "DbFilter")
+@WebFilter(filterName = "DbFilter", urlPatterns = "*")
 public class DbFilter implements Filter {
     public void destroy() {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-        IssuesDao.getInstance().loadDb();
+        IssuesDao.getInstance();
         UserDao.getInstance();
         chain.doFilter(req, resp);
     }

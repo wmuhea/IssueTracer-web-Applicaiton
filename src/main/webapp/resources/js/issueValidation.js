@@ -1,5 +1,11 @@
 $(document).ready(function () {
-
+    $.get("/api/issues")
+        .done(function(response) {
+            console.log(response);
+        })
+        .catch(function(err) {
+            console.log(err);
+        })
 
     $("#create-issue-form").submit(function (event) {
         event.preventDefault();
