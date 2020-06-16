@@ -1,7 +1,8 @@
 package controllers;
-
 import com.google.gson.Gson;
 import helpers.LoginHelper;
+import interfaces.IPageName;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +11,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet(name = "LoginController", urlPatterns = "/login")
-public class LoginController extends HttpServlet {
+public class LoginController extends HttpServlet implements IPageName {
+    @Override
+    public void setPageName(HttpServletRequest request) {
+        request.setAttribute("pageTitle", this.getServletName().replace("Controller", ""));
+    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -38,6 +43,7 @@ public class LoginController extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if(request.getSession().getAttribute("redirectUrl") == null) {
+            setPageName(request);
             request.getRequestDispatcher("/login.jsp").forward(request, response);
         } else{
             response.sendRedirect((String) request.getAttribute("redirectUrl"));

@@ -21,7 +21,7 @@
                             <h1 class="mb-4 mt-3">Your Complaints <span>Matter</span></h1>
                             <p>A problem shared is a problem is solved</p>
 
-                            <p><a href="/login" class="btn btn-primary px-5 py-3 mt-3">Submit a complaint</a></p>
+                            <p><a href="/createIssue" class="btn btn-primary px-5 py-3 mt-3">Submit a complaint</a></p>
                         </div>
                     </div>
                 </div>
@@ -405,265 +405,265 @@
 <%--                    </div>--%>
 <%--                </div>--%>
 <%--            </div>--%>
-<%--            <div class="col-md-6 col-lg-3 ftco-animate">--%>
-<%--                <div class="staff">--%>
-<%--                    <div class="img-wrap d-flex align-items-stretch">--%>
-<%--                        <div class="img align-self-stretch"--%>
-<%--                             style="background-image: url('./resources/images/staff-2.jpg);"></div>--%>
-<%--                    </div>--%>
-<%--                    <div class="text d-flex align-items-center pt-3 text-center">--%>
-<%--                        <div>--%>
-<%--                            <h3 class="mb-2">Rachel Parker</h3>--%>
-<%--                            <span class="position mb-4">Web Designer</span>--%>
-<%--                            <div class="faded">--%>
-<%--                                <ul class="ftco-social text-center">--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--%>
-<%--                                </ul>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <div class="col-md-6 col-lg-3 ftco-animate">--%>
-<%--                <div class="staff">--%>
-<%--                    <div class="img-wrap d-flex align-items-stretch">--%>
-<%--                        <div class="img align-self-stretch"--%>
-<%--                             style="background-image: url('./resources/images/staff-3.jpg');"></div>--%>
-<%--                    </div>--%>
-<%--                    <div class="text d-flex align-items-center pt-3 text-center">--%>
-<%--                        <div>--%>
-<%--                            <h3 class="mb-2">Ian Smith</h3>--%>
-<%--                            <span class="position mb-4">Web Developer</span>--%>
-<%--                            <div class="faded">--%>
-<%--                                <ul class="ftco-social text-center">--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--%>
-<%--                                </ul>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <div class="col-md-6 col-lg-3 ftco-animate">--%>
-<%--                <div class="staff">--%>
-<%--                    <div class="img-wrap d-flex align-items-stretch">--%>
-<%--                        <div class="img align-self-stretch"--%>
-<%--                             style="background-image: url('./resources/images/staff-4.jpg');"></div>--%>
-<%--                    </div>--%>
-<%--                    <div class="text d-flex align-items-center pt-3 text-center">--%>
-<%--                        <div>--%>
-<%--                            <h3 class="mb-2">Alicia Henderson</h3>--%>
-<%--                            <span class="position mb-4">Graphic Designer</span>--%>
-<%--                            <div class="faded">--%>
-<%--                                <ul class="ftco-social text-center">--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>--%>
-<%--                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>--%>
-<%--                                </ul>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--</section>--%>
+<%--&lt;%&ndash;            <div class="col-md-6 col-lg-3 ftco-animate">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <div class="staff">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <div class="img-wrap d-flex align-items-stretch">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div class="img align-self-stretch"&ndash;%&gt;--%>
+<%--&lt;%&ndash;                             style="background-image: url('./resources/images/staff-2.jpg);"></div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <div class="text d-flex align-items-center pt-3 text-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <h3 class="mb-2">Rachel Parker</h3>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <span class="position mb-4">Web Designer</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <div class="faded">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <ul class="ftco-social text-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                </ul>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            <div class="col-md-6 col-lg-3 ftco-animate">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <div class="staff">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <div class="img-wrap d-flex align-items-stretch">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div class="img align-self-stretch"&ndash;%&gt;--%>
+<%--&lt;%&ndash;                             style="background-image: url('./resources/images/staff-3.jpg');"></div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <div class="text d-flex align-items-center pt-3 text-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <h3 class="mb-2">Ian Smith</h3>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <span class="position mb-4">Web Developer</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <div class="faded">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <ul class="ftco-social text-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                </ul>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            <div class="col-md-6 col-lg-3 ftco-animate">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <div class="staff">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <div class="img-wrap d-flex align-items-stretch">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div class="img align-self-stretch"&ndash;%&gt;--%>
+<%--&lt;%&ndash;                             style="background-image: url('./resources/images/staff-4.jpg');"></div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <div class="text d-flex align-items-center pt-3 text-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <h3 class="mb-2">Alicia Henderson</h3>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <span class="position mb-4">Graphic Designer</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <div class="faded">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <ul class="ftco-social text-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                </ul>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;</section>&ndash;%&gt;--%>
 
-<%--		<section class="ftco-section testimony-section" id="testimony-section">--%>
-<%--      <div class="container">--%>
-<%--        <div class="row justify-content-center pb-3">--%>
-<%--          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">--%>
-<%--            <h2 class="mb-4">Happy Clients</h2>--%>
-<%--          </div>--%>
-<%--        </div>--%>
-<%--        <div class="row ftco-animate justify-content-center">--%>
-<%--          <div class="col-md-12">--%>
-<%--            <div class="carousel-testimony owl-carousel ftco-owl">--%>
-<%--              <div class="item">--%>
-<%--                <div class="testimony-wrap text-center py-4 pb-5">--%>
-<%--                  <div class="user-img" style="background-image: url('./resources/images/person_1.jpg')">--%>
-<%--                    <span class="quote d-flex align-items-center justify-content-center">--%>
-<%--                      <i class="icon-quote-left"></i>--%>
-<%--                    </span>--%>
-<%--                  </div>--%>
-<%--                  <div class="text px-4 pb-5">--%>
-<%--                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>--%>
-<%--                    <p class="name">John Fox</p>--%>
-<%--                    <span class="position">Businessman</span>--%>
-<%--                  </div>--%>
-<%--                </div>--%>
-<%--              </div>--%>
-<%--              <div class="item">--%>
-<%--                <div class="testimony-wrap text-center py-4 pb-5">--%>
-<%--                  <div class="user-img" style="background-image: url('./resources/images/person_2.jpg')">--%>
-<%--                    <span class="quote d-flex align-items-center justify-content-center">--%>
-<%--                      <i class="icon-quote-left"></i>--%>
-<%--                    </span>--%>
-<%--                  </div>--%>
-<%--                  <div class="text px-4 pb-5">--%>
-<%--                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>--%>
-<%--                    <p class="name">John Fox</p>--%>
-<%--                    <span class="position">Businessman</span>--%>
-<%--                  </div>--%>
-<%--                </div>--%>
-<%--              </div>--%>
-<%--              <div class="item">--%>
-<%--                <div class="testimony-wrap text-center py-4 pb-5">--%>
-<%--                  <div class="user-img" style="background-image: url('./resources/images/person_3.jpg')">--%>
-<%--                    <span class="quote d-flex align-items-center justify-content-center">--%>
-<%--                      <i class="icon-quote-left"></i>--%>
-<%--                    </span>--%>
-<%--                  </div>--%>
-<%--                  <div class="text px-4 pb-5">--%>
-<%--                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>--%>
-<%--                    <p class="name">John Fox</p>--%>
-<%--                    <span class="position">Businessman</span>--%>
-<%--                  </div>--%>
-<%--                </div>--%>
-<%--              </div>--%>
-<%--              <div class="item">--%>
-<%--                <div class="testimony-wrap text-center py-4 pb-5">--%>
-<%--                  <div class="user-img" style="background-image: url('./resources/images/person_4.jpg')">--%>
-<%--                    <span class="quote d-flex align-items-center justify-content-center">--%>
-<%--                      <i class="icon-quote-left"></i>--%>
-<%--                    </span>--%>
-<%--                  </div>--%>
-<%--                  <div class="text px-4 pb-5">--%>
-<%--                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>--%>
-<%--                    <p class="name">John Fox</p>--%>
-<%--                    <span class="position">Businessman</span>--%>
-<%--                  </div>--%>
-<%--                </div>--%>
-<%--              </div>--%>
-<%--              <div class="item">--%>
-<%--                <div class="testimony-wrap text-center py-4 pb-5">--%>
-<%--                  <div class="user-img" style="background-image: url('./resources/images/person_3.jpg')">--%>
-<%--                    <span class="quote d-flex align-items-center justify-content-center">--%>
-<%--                      <i class="icon-quote-left"></i>--%>
-<%--                    </span>--%>
-<%--                  </div>--%>
-<%--                  <div class="text px-4 pb-5">--%>
-<%--                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>--%>
-<%--                    <p class="name">John Fox</p>--%>
-<%--                    <span class="position">Businessman</span>--%>
-<%--                  </div>--%>
-<%--                </div>--%>
-<%--              </div>--%>
-<%--            </div>--%>
-<%--          </div>--%>
-<%--        </div>--%>
-<%--      </div>--%>
-<%--    </section>--%>
+<%--&lt;%&ndash;		<section class="ftco-section testimony-section" id="testimony-section">&ndash;%&gt;--%>
+<%--&lt;%&ndash;      <div class="container">&ndash;%&gt;--%>
+<%--&lt;%&ndash;        <div class="row justify-content-center pb-3">&ndash;%&gt;--%>
+<%--&lt;%&ndash;          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">&ndash;%&gt;--%>
+<%--&lt;%&ndash;            <h2 class="mb-4">Happy Clients</h2>&ndash;%&gt;--%>
+<%--&lt;%&ndash;          </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;        <div class="row ftco-animate justify-content-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;          <div class="col-md-12">&ndash;%&gt;--%>
+<%--&lt;%&ndash;            <div class="carousel-testimony owl-carousel ftco-owl">&ndash;%&gt;--%>
+<%--&lt;%&ndash;              <div class="item">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <div class="testimony-wrap text-center py-4 pb-5">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  <div class="user-img" style="background-image: url('./resources/images/person_1.jpg')">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <span class="quote d-flex align-items-center justify-content-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                      <i class="icon-quote-left"></i>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  <div class="text px-4 pb-5">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <p class="name">John Fox</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <span class="position">Businessman</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;              </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;              <div class="item">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <div class="testimony-wrap text-center py-4 pb-5">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  <div class="user-img" style="background-image: url('./resources/images/person_2.jpg')">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <span class="quote d-flex align-items-center justify-content-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                      <i class="icon-quote-left"></i>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  <div class="text px-4 pb-5">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <p class="name">John Fox</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <span class="position">Businessman</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;              </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;              <div class="item">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <div class="testimony-wrap text-center py-4 pb-5">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  <div class="user-img" style="background-image: url('./resources/images/person_3.jpg')">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <span class="quote d-flex align-items-center justify-content-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                      <i class="icon-quote-left"></i>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  <div class="text px-4 pb-5">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <p class="name">John Fox</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <span class="position">Businessman</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;              </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;              <div class="item">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <div class="testimony-wrap text-center py-4 pb-5">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  <div class="user-img" style="background-image: url('./resources/images/person_4.jpg')">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <span class="quote d-flex align-items-center justify-content-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                      <i class="icon-quote-left"></i>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  <div class="text px-4 pb-5">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <p class="name">John Fox</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <span class="position">Businessman</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;              </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;              <div class="item">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <div class="testimony-wrap text-center py-4 pb-5">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  <div class="user-img" style="background-image: url('./resources/images/person_3.jpg')">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <span class="quote d-flex align-items-center justify-content-center">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                      <i class="icon-quote-left"></i>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  <div class="text px-4 pb-5">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <p class="name">John Fox</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <span class="position">Businessman</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                  </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;              </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;          </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;      </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;    </section>&ndash;%&gt;--%>
 
-<%--<section class="ftco-section bg-light" id="blog-section">--%>
-<%--    <div class="container">--%>
-<%--        <div class="row justify-content-center mb-5 pb-5">--%>
-<%--            <div class="col-md-7 heading-section text-center ftco-animate">--%>
-<%--                <span class="subheading">Blog</span>--%>
-<%--                <h2 class="mb-4">Our Blog</h2>--%>
-<%--                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--        <div class="row d-flex">--%>
-<%--            <div class="col-md-4 d-flex ftco-animate">--%>
-<%--                <div class="blog-entry justify-content-end">--%>
-<%--                    <a href="single.html" class="block-20"--%>
-<%--                       style="background-image: url('resources/images/image_1.jpg');">--%>
-<%--                    </a>--%>
-<%--                    <div class="text mt-3 float-right d-block">--%>
-<%--                        <div class="d-flex align-items-center pt-2 mb-4 topp">--%>
-<%--                            <div class="one mr-2">--%>
-<%--                                <span class="day">12</span>--%>
-<%--                            </div>--%>
-<%--                            <div class="two">--%>
-<%--                                <span class="yr">2019</span>--%>
-<%--                                <span class="mos">March</span>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                        <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>--%>
-<%--                        </h3>--%>
-<%--                        <p>A small river named Duden flows by their place and supplies it with the necessary--%>
-<%--                            regelialia.</p>--%>
-<%--                        <div class="d-flex align-items-center mt-4 meta">--%>
-<%--                            <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span--%>
-<%--                                    class="ion-ios-arrow-round-forward"></span></a></p>--%>
-<%--                            <p class="ml-auto mb-0">--%>
-<%--                                <a href="#" class="mr-2">Admin</a>--%>
-<%--                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>--%>
-<%--                            </p>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <div class="col-md-4 d-flex ftco-animate">--%>
-<%--                <div class="blog-entry justify-content-end">--%>
-<%--                    <a href="single.html" class="block-20"--%>
-<%--                       style="background-image: url('resources/images/image_2.jpg');">--%>
-<%--                    </a>--%>
-<%--                    <div class="text mt-3 float-right d-block">--%>
-<%--                        <div class="d-flex align-items-center pt-2 mb-4 topp">--%>
-<%--                            <div class="one mr-2">--%>
-<%--                                <span class="day">10</span>--%>
-<%--                            </div>--%>
-<%--                            <div class="two">--%>
-<%--                                <span class="yr">2019</span>--%>
-<%--                                <span class="mos">March</span>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                        <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>--%>
-<%--                        </h3>--%>
-<%--                        <p>A small river named Duden flows by their place and supplies it with the necessary--%>
-<%--                            regelialia.</p>--%>
-<%--                        <div class="d-flex align-items-center mt-4 meta">--%>
-<%--                            <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span--%>
-<%--                                    class="ion-ios-arrow-round-forward"></span></a></p>--%>
-<%--                            <p class="ml-auto mb-0">--%>
-<%--                                <a href="#" class="mr-2">Admin</a>--%>
-<%--                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>--%>
-<%--                            </p>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--            <div class="col-md-4 d-flex ftco-animate">--%>
-<%--                <div class="blog-entry">--%>
-<%--                    <a href="single.html" class="block-20"--%>
-<%--                       style="background-image: url('resources/images/image_3.jpg');">--%>
-<%--                    </a>--%>
-<%--                    <div class="text mt-3 float-right d-block">--%>
-<%--                        <div class="d-flex align-items-center pt-2 mb-4 topp">--%>
-<%--                            <div class="one mr-2">--%>
-<%--                                <span class="day">05</span>--%>
-<%--                            </div>--%>
-<%--                            <div class="two">--%>
-<%--                                <span class="yr">2019</span>--%>
-<%--                                <span class="mos">March</span>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                        <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>--%>
-<%--                        </h3>--%>
-<%--                        <p>A small river named Duden flows by their place and supplies it with the necessary--%>
-<%--                            regelialia.</p>--%>
-<%--                        <div class="d-flex align-items-center mt-4 meta">--%>
-<%--                            <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span--%>
-<%--                                    class="ion-ios-arrow-round-forward"></span></a></p>--%>
-<%--                            <p class="ml-auto mb-0">--%>
-<%--                                <a href="#" class="mr-2">Admin</a>--%>
-<%--                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>--%>
-<%--                            </p>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--</section>--%>
+<%--&lt;%&ndash;<section class="ftco-section bg-light" id="blog-section">&ndash;%&gt;--%>
+<%--&lt;%&ndash;    <div class="container">&ndash;%&gt;--%>
+<%--&lt;%&ndash;        <div class="row justify-content-center mb-5 pb-5">&ndash;%&gt;--%>
+<%--&lt;%&ndash;            <div class="col-md-7 heading-section text-center ftco-animate">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <span class="subheading">Blog</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <h2 class="mb-4">Our Blog</h2>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;        <div class="row d-flex">&ndash;%&gt;--%>
+<%--&lt;%&ndash;            <div class="col-md-4 d-flex ftco-animate">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <div class="blog-entry justify-content-end">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <a href="single.html" class="block-20"&ndash;%&gt;--%>
+<%--&lt;%&ndash;                       style="background-image: url('resources/images/image_1.jpg');">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <div class="text mt-3 float-right d-block">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div class="d-flex align-items-center pt-2 mb-4 topp">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <div class="one mr-2">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <span class="day">12</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <div class="two">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <span class="yr">2019</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <span class="mos">March</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </h3>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <p>A small river named Duden flows by their place and supplies it with the necessary&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            regelialia.</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div class="d-flex align-items-center mt-4 meta">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    class="ion-ios-arrow-round-forward"></span></a></p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <p class="ml-auto mb-0">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <a href="#" class="mr-2">Admin</a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            <div class="col-md-4 d-flex ftco-animate">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <div class="blog-entry justify-content-end">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <a href="single.html" class="block-20"&ndash;%&gt;--%>
+<%--&lt;%&ndash;                       style="background-image: url('resources/images/image_2.jpg');">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <div class="text mt-3 float-right d-block">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div class="d-flex align-items-center pt-2 mb-4 topp">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <div class="one mr-2">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <span class="day">10</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <div class="two">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <span class="yr">2019</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <span class="mos">March</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </h3>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <p>A small river named Duden flows by their place and supplies it with the necessary&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            regelialia.</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div class="d-flex align-items-center mt-4 meta">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    class="ion-ios-arrow-round-forward"></span></a></p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <p class="ml-auto mb-0">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <a href="#" class="mr-2">Admin</a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            <div class="col-md-4 d-flex ftco-animate">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                <div class="blog-entry">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <a href="single.html" class="block-20"&ndash;%&gt;--%>
+<%--&lt;%&ndash;                       style="background-image: url('resources/images/image_3.jpg');">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    <div class="text mt-3 float-right d-block">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div class="d-flex align-items-center pt-2 mb-4 topp">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <div class="one mr-2">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <span class="day">05</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <div class="two">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <span class="yr">2019</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <span class="mos">March</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </h3>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <p>A small river named Duden flows by their place and supplies it with the necessary&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            regelialia.</p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        <div class="d-flex align-items-center mt-4 meta">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    class="ion-ios-arrow-round-forward"></span></a></p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            <p class="ml-auto mb-0">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <a href="#" class="mr-2">Admin</a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                            </p>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;            </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;        </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;    </div>&ndash;%&gt;--%>
+<%--&lt;%&ndash;</section>&ndash;%&gt;--%>
 
 <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
     <div class="container">

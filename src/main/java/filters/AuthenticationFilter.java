@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(filterName = "AuthenticationFilter")
+@WebFilter(filterName = "AuthenticationFilter", urlPatterns = "/app/*")
 public class AuthenticationFilter implements Filter {
     public void destroy() {
     }

@@ -11,8 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.List;
 
 @WebServlet(name = "ApplicationController", urlPatterns = "/app")
 public class ApplicationController extends HttpServlet {
@@ -21,14 +19,12 @@ public class ApplicationController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-       if (request.getAttribute("redirectUrl") == null) {
+        if (request.getAttribute("redirectUrl") == null) {
             request.getRequestDispatcher("/app/dashboard.jsp").forward(request, response);
-        }else{
+        } else {
             response.sendRedirect((String) request.getAttribute("redirectUrl"));
         }
-
     }
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

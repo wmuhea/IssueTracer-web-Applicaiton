@@ -23,3 +23,9 @@
 .errorMsg, .errors{
     color: red;
 }
+
+
+.successMsg{
+    color: green;
+}
+
