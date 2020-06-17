@@ -3,22 +3,22 @@
 <div class="container" style="margin-top: 100px">
     <div class="row">
         <div class="col-md-12">
-            <h1>Welcome ${user.username}</h1>
-            <a href="admin_viewsProfile.jsp"><img src="../resources/images/testimony-2.jpg" height="80px" width="80px">View Profiles</a>
+            <h1>User Profiles</h1>
+
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12">
-            <div id="issues"></div>
+            <div id="users"></div>
         </div>
     </div>
 </div>
 
-<script id="issue-item-template" type="template">
-    <div class="issue-item" style="margin-bottom: 20px; border: 1px solid #ececec; padding: 20px">
-        <h3 class="issue-title">Dumm1</h3>
-        <p class="description">Dumm2</p>
+<script id="user-item-template" type="template">
+    <div class="user-item" style="margin-bottom: 20px; border: 1px solid #ececec; padding: 20px">
+        <h3 class="username">Dumm1</h3>
+        <h3 class="password">Dumm2</h3>
         <div id="button-wrapper">
             <button class="btn btn-danger issue-item-action">Delete</button>
         </div>

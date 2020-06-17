@@ -5,15 +5,17 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(name = "ProfileController" , urlPatterns = "/profile")
+@WebServlet(name = "ProfileController" , urlPatterns = "/app/profile")
 public class ProfileController extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/profile.jsp").forward(request, response);
+        if(request.getAttribute("redirectUrl") == null) {
+            request.getRequestDispatcher("/profile.jsp").forward(request, response);
+        } else {
+            response.sendRedirect((String) request.getAttribute("redirectUrl"));
+        }
     }
 }
