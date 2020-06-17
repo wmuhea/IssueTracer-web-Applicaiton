@@ -47,14 +47,6 @@ public class IssueApiController extends HttpServlet {
             List<Issue> issueList = IssuesDao.getInstance().readAllIssues();
             out.print(gson.toJson(issueList));
         }else {
-
-            String issueId = request.getParameter("Id");
-
-            if(request.getParameter("Id") != null) {
-                System.out.println("---about to delete----");
-                IssuesDao.getInstance().removeIssue(user.getUsername(), issueId);
-            }
-
             List<Issue> issueList = IssuesDao.getInstance().readIssuesFromDb(user.getUsername());
             out.print(gson.toJson(issueList));
         }
@@ -62,5 +54,18 @@ public class IssueApiController extends HttpServlet {
         out.flush();
     }
 
+    @Override
+    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        PrintWriter out = response.getWriter();
+        String issueId = request.getParameter("Id");
+        User user = (User) request.getSession().getAttribute("user");
 
+        if(request.getParameter("Id") != null) {
+            IssuesDao.getInstance().removeIssue(user.getUsername(), issueId);
+        }
+
+        response.setStatus(200);
+        out.print("Successful");
+        out.flush();
+    }
 }
