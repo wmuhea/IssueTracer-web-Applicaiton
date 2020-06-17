@@ -64,8 +64,7 @@
             </div>
         </div>
         <div class="col-md-6 d-flex">
-            <div id="login-image" class="bg-white"
-                 style="background-image: url('./resources/images/project-1.jpg');height: 100vh;width: 100%;"></div>
+            <div id="login-image" class="bg-white"></div>
         </div>
     </div>
 </div>

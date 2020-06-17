@@ -13,6 +13,14 @@
     max-width: 400px;
 }
 
+#login-image {
+    background-image: url('/resources/images/project-1.jpg');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media screen and (min-width: 768px) {
     .login-wrapper > .row {
         height: 100vh;
