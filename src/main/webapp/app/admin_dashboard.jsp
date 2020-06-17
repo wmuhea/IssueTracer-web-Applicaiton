@@ -4,6 +4,7 @@
     <div class="row">
         <div class="col-md-12">
             <h1>Welcome ${user.username}</h1>
+            <a href="admin_viewsProfile.jsp"><img src="../resources/images/testimony-2.jpg" height="80px" width="80px">View Profiles</a>
         </div>
     </div>
 

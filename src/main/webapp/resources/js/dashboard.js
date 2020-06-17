@@ -22,6 +22,21 @@ $(function () {
         });
     }
 
+    const resolveIssue = function (event) {
+
+        event.preventDefault();
+        let self = this;
+        let issueId = $(self).attr("id").substring(1);
+        $.ajax({
+            dataType: "html",
+            url: "/api/issues?Id=" + issueId,
+            type: "put",
+            success: function () {
+                loadIssues();
+            }
+        });
+    }
+
 
     const appendIssue = function (fetchedIssue) {
         // Extract Elements
@@ -36,8 +51,15 @@ $(function () {
 
         let issueSeverity = $('<span class = "badge float-left">').html(fetchedIssue.issueSeverity);
         severityBadgeAdjust(fetchedIssue, issueSeverity);
-        let closeBtn = $('<a href ="#" class = "btn btn-warning">').html("Close Issue");
+        let closeBtn = $('<button class = "btn btn-warning">').click(resolveIssue).html("Close Issue").attr("id", "r"+fetchedIssue.issueId);
         let deleteBtn = $('<button class = "btn btn-danger">').click(deleteData).html("Delete Issue").attr("id", fetchedIssue.issueId);
+
+        // DIsable close button if issue has resolved status
+        if(fetchedIssue.status === 'R') {
+            closeBtn.html("Resolved")
+                .prop("disabled", true);
+        }
+
 
         // Title
         let issueDetails = $('<h6 class="border-bottom border-gray pb-2 mb-0">').html($('<strong>').html("@Description"));
@@ -103,6 +125,7 @@ $(function () {
 
     let loadIssues = function () {
         $("#dboard").empty();
+
         $.get('/api/issues')
             .done(loadData)
             .error(printError);

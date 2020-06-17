@@ -1,8 +1,13 @@
 package controllers.api;
 
+import Data.IssuesDao;
+import Data.UserDao;
 import com.google.gson.Gson;
+import helpers.IssueHelper;
 import helpers.LoginHelper;
 import helpers.ProfileHelper;
+import models.Issue;
+import models.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,27 +16,46 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
-@WebServlet(name = "ProfileApiController")
+@WebServlet(name = "ProfileApiController", urlPatterns = "/api/profile")
 public class ProfileApiController extends HttpServlet {
+    Gson gson = new Gson();
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Boolean validation = ProfileHelper.isValid(request, response);
+        User user = ProfileHelper.processUserProfile(request);
+        PrintWriter out = response.getWriter();
 
-        Gson gson = new Gson();
-        PrintWriter out = response.getWriter(); //writer for response
+        if (user != null) {
+            response.setStatus(202);
+            out.print(gson.toJson(user));
 
-        if (validation) {
-            response.setStatus(200);
-            out.print(gson.toJson("Success"));
         } else {
             response.setStatus(500);
-            out.print(gson.toJson(LoginHelper.getErrors()));
-            LoginHelper.clearErrors();
+            out.print(gson.toJson(ProfileHelper.getErrors()));
         }
 
-        out.flush(); //response writer
+        out.flush();
+    }
+
+    @Override
+    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        PrintWriter out = response.getWriter();
+        User user = (User) request.getSession().getAttribute("user");
+        UserDao.getInstance().removeUser(user.getUsername());
+
+        response.setStatus(200);
+        out.print("Successful");
+        out.flush();
+
+
     }
 }
+
+
+
+
+
 
 
 

@@ -1,8 +1,10 @@
 package Data;
 
+import models.Issue;
 import models.User;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class UserDao {
@@ -32,5 +34,12 @@ public class UserDao {
 
     public User findByUsername(String userName) {
         return teamDb.get(userName);
+    }
+
+    public void removeUser(String username) {
+
+        User user = teamDb.get(username);
+        teamDb.remove(user.getUsername());
+
     }
 }
