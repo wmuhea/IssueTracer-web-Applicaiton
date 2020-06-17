@@ -11,8 +11,7 @@ import java.io.IOException;
 @WebServlet(name = "LoginController", urlPatterns = "/login")
 public class LoginController extends HttpServlet implements IPageName {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println(request.getSession().getAttribute("user"));
-        if (request.getSession().getAttribute("redirectUrl") == null) {
+        if (request.getAttribute("redirectUrl") == null) {
             setPageName(request, this.getServletName());
             request.getRequestDispatcher("/login.jsp").forward(request, response);
         } else {

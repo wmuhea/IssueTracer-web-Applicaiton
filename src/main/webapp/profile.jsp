@@ -50,6 +50,8 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" value="Set Profile" id="createProfileButton" class="btn btn-primary py-3 px-5">
+                                    <input type="button" value="Delete Profile" id="deleteProfileButton" class="btn btn-danger issue-item-action" data-user="${user.username}">
+
                                 </div>
 
 
@@ -61,6 +63,7 @@
 
                 </div>
             </div>
+
         </div>
     </div>
 </section>

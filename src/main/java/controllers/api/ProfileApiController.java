@@ -1,6 +1,7 @@
 package controllers.api;
 
 import Data.IssuesDao;
+import Data.UserDao;
 import com.google.gson.Gson;
 import helpers.IssueHelper;
 import helpers.LoginHelper;
@@ -20,9 +21,10 @@ import java.util.List;
 @WebServlet(name = "ProfileApiController", urlPatterns = "/api/profile")
 public class ProfileApiController extends HttpServlet {
     Gson gson = new Gson();
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    User user = ProfileHelper.processUserProfile(request);
-    PrintWriter out = response.getWriter();
+        User user = ProfileHelper.processUserProfile(request);
+        PrintWriter out = response.getWriter();
 
         if (user != null) {
             response.setStatus(202);
@@ -36,17 +38,19 @@ public class ProfileApiController extends HttpServlet {
         out.flush();
     }
 
-//    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//
-//            PrintWriter out = response.getWriter();
-//
-//            if (request.getSession().getAttribute("user") != null) {
-//                User user;
-//                String name = user.getFirstname();
-//            }
-//            out.flush();
-//        }
+    @Override
+    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        PrintWriter out = response.getWriter();
+        User user = (User) request.getSession().getAttribute("user");
+        UserDao.getInstance().removeUser(user.getUsername());
+
+        response.setStatus(200);
+        out.print("Successful");
+        out.flush();
+
+
     }
+}
 
 
 
