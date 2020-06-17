@@ -1,5 +1,6 @@
 package Data;
 
+import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;
 import models.Issue;
 import storage.IssuesStorage;
@@ -10,6 +11,7 @@ import java.util.stream.Collectors;
 public class IssuesDao {
     private static IssuesDao issuesDatabase = null;
     private Map<String, List<Issue>> issuesDb = new HashMap<>();
+    private Gson gson = new Gson();
 
     // For testing purpose we do init some issues here
     {
@@ -20,9 +22,16 @@ public class IssuesDao {
     private IssuesDao() {
     }
 
-    public boolean writeDb() {
+    public void writeDb() {
         System.out.println("-------------< DB Write >-------------");
-        return IssuesStorage.writeDb(issuesDb);
+
+        try {
+            if(!IssuesStorage.writeDb(issuesDb)) {
+                throw new Exception("Could not write data to database");
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
     public void loadDb() {
@@ -53,34 +62,27 @@ public class IssuesDao {
     }
 
 
-    public void addIssueToDb(String assignedTo, Issue newIssue) throws Exception {
+    public void addIssueToDb(String assignedTo, Issue newIssue) {
 
         if (!issuesDb.containsKey(assignedTo)) {
             issuesDb.put(assignedTo, new ArrayList<Issue>());
         }
 
         issuesDb.get(assignedTo).add(newIssue);
-
-        if(!writeDb()) {
-            throw new Exception("Could not write data to database");
-        }
+        writeDb();
     }
 
     public void removeIssue(String assignedTo, String issueId) {
-        System.out.println(issueId);
-        List<Issue> issues = (List<Issue>) issuesDb.get(assignedTo);
-
-        System.out.println(((Issue) issues.get(0)).getIssueId());
-
+        List<Issue> issues = issuesDb.get(assignedTo);
 
         for(int i = 0; i < issues.size(); i++) {
-  //          if(issues.get(i).getIssueId().equals(issueId)) {
-                System.out.println(issues.get(i).getClass());
-           //System.out.println(i);
-  //          }
+            Issue issue = gson.fromJson(gson.toJson(issues.get(i)), Issue.class);
+            if(issue.getIssueId().equals(issueId)) {
+                issues.remove(i);
+            }
         }
 
-
+        writeDb();
     }
 
 }
