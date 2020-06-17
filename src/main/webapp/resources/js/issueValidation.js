@@ -6,7 +6,8 @@ $(document).ready(function () {
         let assignTo = $("#assign");
         let severity = $("#severity");
         let error = $(".errorMsg");
-        let success=$(".successMsg");
+        let success = $(".successMsg");
+        let deleteBtn = $(".btn btn-danger issue-item-action");
 
         if ((issue.val().length > 0) && (description.val().length > 0) && (assignTo.val().length > 0)) {
             $.ajax({
@@ -25,10 +26,9 @@ $(document).ready(function () {
                 console.log(response);
             })
             success.text("Issue successfully created.");
+        } else {
+            error.text("Please fill all the fields.");
         }
-            else {
-                error.text("Please fill all the fields.");
-            }
 
         issue.val(" ");
         description.val(" ");
@@ -40,35 +40,77 @@ $(document).ready(function () {
 
     function deleteBtnHandler(e) {
         e.preventDefault();
+        let self = this;
         console.log("Issue ", $(this).data("issueId"), " is about to be deleted");
-        $(this).closest($(".issue-item")).remove();
+
+        let issueId = $(this).data("issueId");
+        let assignTo = $(this).data("assignTo");
+
+        $.ajax({
+            dataType: "html",
+            url: "/api/admin/issues?Id=" + issueId + "&assignTo="+assignTo,
+            type: 'delete',
+            success: function() {
+                console.log(self);
+                $(self).closest(".issue-item").remove();
+                loadAdminIssues();
+            },
+            error: function (error) {
+                console.log(error);
+                // alert(error);
+            }
+        });
+
     }
 
     function displayIssueOnAdmin(issues) {
         let text = $("#issue-item-template").text();
         let container = $("#issues");
         let issueElem = $(text);
-        console.log(issues);
-        issues.forEach(function(_item) {
+
+        issues.forEach(function (_item) {
             let item = issueElem.clone();
 
             item.attr("data-issue-id", _item.issueId);
             item.find('.issue-title').text(_item.issueCategory);
             item.find('.description').text(_item.issueDescription);
-            item.find(".issue-item-action").attr("data-issue-id", _item.issueId).click(deleteBtnHandler);
+            item.find(".issue-item-action").attr("data-issue-id", _item.issueId).attr("data-assign-to", _item.assignedTo).click(deleteBtnHandler);
 
             container.append(item);
         });
     }
+    let loadData = function (data) {
 
-    if(window.location.pathname === "/app/admin") {
-        console.log("Getting the issues");
+    }
+        // }
+        // let loadIssues = function () {
+        //     $("#dbboard").empty();
+        //     $.get('/api/issues')
+        //         .done(loadData)
+        //         .error(printError);
+
+    function loadAdminIssues() {
         $.get("/api/issues")
             .done(function (response) {
+                $("#dbboard").empty();
+                if (response.length === 0) {
+                    return $("#dbboard").html(function () {
+                        return $("<div>", {style: "min-height: 300px; display: flex; justify-content: center; align-items: center"})
+                            .append(function () {
+                                return $("<h3>", {text: "No Issues"})
+                            });
+                    })
+                }
                 displayIssueOnAdmin(response);
             })
             .catch(function (err) {
                 console.log(err);
             })
+    }
+
+
+    if (window.location.pathname === "/app/admin") {
+        console.log("Getting the issues");
+        loadAdminIssues();
     }
 });

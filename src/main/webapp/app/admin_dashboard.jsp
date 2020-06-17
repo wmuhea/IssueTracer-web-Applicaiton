@@ -14,6 +14,12 @@
     </div>
 </div>
 
+<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="db-section" style="margin: 100px 0">
+    <div id="dbboard" class="container">
+
+    </div>
+</section>
+
 <script id="issue-item-template" type="template">
     <div class="issue-item" style="margin-bottom: 20px; border: 1px solid #ececec; padding: 20px">
         <h3 class="issue-title">Dumm1</h3>
