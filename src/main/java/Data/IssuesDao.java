@@ -2,6 +2,7 @@ package Data;
 
 import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;
+import com.google.gson.reflect.TypeToken;
 import models.Issue;
 import storage.IssuesStorage;
 
@@ -85,4 +86,15 @@ public class IssuesDao {
         writeDb();
     }
 
+    public void updateIssueStatus(String username, String issueId) {
+        List<Issue> issueList = issuesDb.get(username);
+
+        for(int i = 0; i < issueList.size(); i++) {
+           Issue issue = gson.fromJson(gson.toJson(issueList.get(i)), new TypeToken<Issue>(){}.getType());
+            if(issue.getIssueId().equals(issueId)) {
+                issueList.get(i).setStatus("R");
+            }
+        }
+        writeDb();
+    }
 }

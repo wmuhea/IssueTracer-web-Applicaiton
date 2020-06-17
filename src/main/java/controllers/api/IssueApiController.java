@@ -1,7 +1,6 @@
 package controllers.api;
 
 import Data.IssuesDao;
-import Data.UserDao;
 import com.google.gson.Gson;
 import helpers.IssueHelper;
 import models.Issue;
@@ -62,6 +61,22 @@ public class IssueApiController extends HttpServlet {
 
         if(request.getParameter("Id") != null) {
             IssuesDao.getInstance().removeIssue(user.getUsername(), issueId);
+        }
+
+        response.setStatus(200);
+        out.print("Successful");
+        out.flush();
+    }
+
+    @Override
+    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        PrintWriter out = response.getWriter();
+        String issueId = request.getParameter("Id");
+        User user = (User) request.getSession().getAttribute("user");
+
+        if(issueId != null) {
+            IssuesDao.getInstance().updateIssueStatus(user.getUsername(), issueId);
+
         }
 
         response.setStatus(200);
