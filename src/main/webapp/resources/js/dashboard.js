@@ -22,6 +22,7 @@ $(function () {
         });
     }
 
+
     const appendIssue = function (fetchedIssue) {
         // Extract Elements
         let issueCategory = $('<h5 class = "mb-0 text-green lh-100">').html(fetchedIssue.issueCategory);
