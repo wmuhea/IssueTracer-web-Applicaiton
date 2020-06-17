@@ -20,7 +20,7 @@
                     <c:if test="${user.username == 'admin'}">
                         <li class="nav-item"><a href="/app/admin" class="nav-link"><span>Dashboard</span></a></li>
                     </c:if>
-                    <li class="nav-item"><a href="/profile" class="nav-link"><span>${user.username}'s Profile</span></a>
+                    <li class="nav-item"><a href="/app/profile" class="nav-link"><span>${user.username}'s Profile</span></a>
                     </li>
                 </c:if>
 

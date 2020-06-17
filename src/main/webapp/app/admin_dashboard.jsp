@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-12">
             <h1>Welcome ${user.username}</h1>
-            <a href="admin_viewsProfile.jsp"><img src="../resources/images/testimony-2.jpg" height="80px" width="80px">View Profiles</a>
+<%--            <a href="admin_viewsProfile.jsp"><img src="../resources/images/testimony-2.jpg" height="80px" width="80px">View Profiles</a>--%>
         </div>
     </div>
 
@@ -14,12 +14,6 @@
         </div>
     </div>
 </div>
-
-<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="db-section" style="margin: 100px 0">
-    <div id="dbboard" class="container">
-
-    </div>
-</section>
 
 <script id="issue-item-template" type="template">
     <div class="issue-item" style="margin-bottom: 20px; border: 1px solid #ececec; padding: 20px">
